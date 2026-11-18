@@ -4,7 +4,7 @@
 
 A weather intelligence site for U.S. energy traders. It shows how point-specific weather forecasts for wind, solar and gas plants can help a trading desk see generation swings before they show up in the market.
 
-> The source code for this project is private. This repo is a public overview for anyone who wants to see what it does and how it was built. I'm happy to walk through the code in an interview.
+> The source code for this project is private. This repo is a public overview for anyone who wants to see what it does and how it was built. 
 
 ## What it does
 
