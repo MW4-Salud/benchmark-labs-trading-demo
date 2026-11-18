@@ -4,7 +4,7 @@
 
 A weather intelligence site for U.S. energy traders. It shows how point-specific weather forecasts for wind, solar and gas plants can help a trading desk see generation swings before they show up in the market.
 
-> The source code for this project is private. This repo is a public overview for anyone who wants to see what it does and how it was built. 
+> The source code for this project is private. This repo is a public overview for anyone who wants to see what it does and how it was built. I'm happy to walk through the code in an interview.
 
 ## What it does
 
@@ -37,6 +37,22 @@ A weather intelligence site for U.S. energy traders. It shows how point-specific
 | Hosting | Vercel |
 | Data prep | Python (cleaning and geocoding station and power plant data) |
 
+## Code samples
+
+The site's code is private, but these two Python files are taken from my station data pipeline. They only need the standard library.
+
+| File | What it does |
+|------|--------------|
+| `weather_calcs.py` | Turns raw station readings into trading-relevant numbers: dew point, heat index, wind chill, wet bulb, air density, wind power density, hub-height wind, clear sky index, fire weather index and heating/cooling degree days |
+| `dedup_stations.py` | Removes duplicate stations that appear in more than one data source, using a grid so it stays fast with thousands of stations |
+
+Try them:
+
+```
+python weather_calcs.py
+python dedup_stations.py
+```
+
 ## What I worked on
 
 - Built the site from scratch
@@ -47,4 +63,4 @@ A weather intelligence site for U.S. energy traders. It shows how point-specific
 
 ---
 
-© 2026 Benchmark Labs. All rights reserved. This repo contains no source code or data.
+© 2026 Benchmark Labs. All rights reserved. This repo does not include the site's code, data or API keys.
